@@ -28,6 +28,7 @@ int *PrintArr(int n){
 // will return if a number is prime.
 int isPrime(int n){
     if(n==1) return TRUE;
+    if(n==0) return FALSE;
     int flag = 0;
     for (int i = 2; i<=n/2; i++)
     {
@@ -54,6 +55,7 @@ int Factorial (int n){
 
 // Strong number is a special number whose sum of the factorial of digits is equal to the original number.
 int isStrong(int n){
+    if(n==0) return FALSE;
     int origin = n;
 
     //Breaks a Number into intArray.
